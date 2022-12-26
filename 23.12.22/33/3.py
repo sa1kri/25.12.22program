@@ -19,11 +19,13 @@ def animation(Wide,Symbol,Duration=1):
             IncDec = 1
 Wide = int(input("Размер поля: "))
 Symbol = input("Символ: ")
+
 if Wide < 1 or Symbol == '':
     print("Свойство широкого поля или символов равно нулю")
 else:
-    Duration = int(input("Продолжительность анимации (1) или нет для цикла (0): "))
+    Duration = int(input("Бесконечная анимация (1) или нет  (0): "))
     if Duration:
         animation(Wide, Symbol, Duration)
     else:
         animation(Wide, Symbol)
+

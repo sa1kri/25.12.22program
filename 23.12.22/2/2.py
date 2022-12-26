@@ -6,10 +6,10 @@ def graphic(argArr, SortType=0):
         for j in range(i):
             print("#", end='')
         print(i)
-NumOfArgs = int(input("Количество аргументов: "))
+NumOfArgs = int(input("Количество цифр: "))
 print("Введите аргументы ")
 argArr = [int(input()) for i in range(NumOfArgs)]
-SortType = input("типы сортировки: 1 - по убыванию, узел - по возрастанию: ")
+SortType = input("типы сортировки: 1 - по убыванию, 2 - по возрастанию: ")
 if SortType:
     graphic(argArr, SortType)
 else:

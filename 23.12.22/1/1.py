@@ -1,7 +1,7 @@
 import random
 import string
 
-s = int(input("ведите голичество букв: "))
+s = int(input("ведите количество букв: "))
 
 def generate_random_string(length):
     letters = string.ascii_lowercase
